@@ -1,0 +1,28 @@
+{
+  "name": "municipal-complaint-portal",
+  "version": "1.0.0",
+  "description": "Municipal Complaint Registration Portal - Standalone Full-Stack System",
+  "main": "server/server.js",
+  "scripts": {
+    "install:server": "npm --prefix server install",
+    "install:client": "npm --prefix client install",
+    "build": "npm --prefix client install && npm --prefix client run build && npm --prefix server install",
+    "start": "node server/server.js",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "init-db": "node server/scripts/init-db.js",
+    "test": "node test-suite.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "municipal",
+    "complaint-portal",
+    "react",
+    "express",
+    "sqlite"
+  ],
+  "author": "College Demonstration Project",
+  "license": "ISC"
+}
